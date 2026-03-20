@@ -2,3 +2,48 @@ nav{
     text-align: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
 }
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger {
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Dropdown escondido por padrão */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    border: 1px solid #ccc;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown a {
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown a:hover {
+    background-color: #f1f1f1;
+}
